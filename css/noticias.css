@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    background-color: #32a983;
+    color: #fff;
+    padding: 5px;
+    text-align: right;
+}
+
+.social-media {
+    margin-right: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #585858;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.main-header a {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.main-header a:hover {
+    color: #32a983;
+}
+
+.logo img {
+    max-width: 200px;
+    max-height: 120px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.news {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    margin-top: 20px;
+}
+
+.article {
+    margin-bottom: 50px; /* Añadido un espacio inferior para evitar que el footer se solape con el contenido */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: calc(100vh - 40px);
+    background-color: #f4f4f4;
+    overflow-y: auto;
+    padding: 20px;
+    z-index: 1;
+}
+
+.related-news {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.related-news-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.read-more-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.related-news-item:hover .read-more-img {
+    transform: scale(1.1);
+}
+
+.related-news-item h3 {
+    margin: 10px 0;
+}
+
+.related-news-item p {
+    font-size: 14px;
+}
+
+.read-more-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgba(50, 169, 131, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.related-news-item:hover .read-more-link {
+    opacity: 1;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+}
