@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.top-bar {
+    background-color: #32a983;
+    color: #fff;
+    padding: 5px;
+    text-align: right;
+}
+
+.social-media {
+    margin-right: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #585858;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    text-transform: uppercase;
+}
+
+.main-header a {
+    font-family: 'Roboto', sans-serif; /* Establecer el estilo de letra a Roboto */
+    color: #fff; /* Color de letra blanco por defecto */
+    text-decoration: none;
+    transition: color 0.3s; /* Transición de color durante 0.3 segundos */
+}
+
+.main-header a:hover {
+    color: #32a983; /* Cambiar el color al pasar el ratón */
+}
+
+.logo img {
+    max-width: 200px;
+    max-height: 120px;
+    margin-right: 10px; /* Añadir un margen derecho al logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.news-slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+.news-overlay h2 {
+    margin-bottom: 10px;
+}
+
+.read-more-btn {
+    background-color: #32a983; /* Cambiar el color del botón al color de las redes sociales */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
