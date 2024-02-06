@@ -50,6 +50,8 @@ body {
 }
 
 nav ul {
+    text-align: center;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -119,4 +121,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.social-icon img {
+    width: 20px; /* Ajusta este valor según el tamaño deseado */
+    height: auto;
 }
