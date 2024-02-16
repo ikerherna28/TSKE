@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo de Baloncesto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .header-orrialde-tituloa {
+            background-image: url('https://www.gisaski.eus/site/contenido/media/header-page.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-orrialde-tituloa:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha para controlar la opacidad */
+        }
+
+        /* Estilos de formulario de inicio de sesión */
+        .login-form {
+            position: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 30px #32a983;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            background: #32a983;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background: rgb(102, 180, 155);
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado principal con menú y slider -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="./img/club_patrocinador_sin_fondo.png" alt="Logo del club">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hasiera</a></li>
+                <li><a href="news.html">Berriak</a></li>
+                <li class="has-submenu"><a href="#">Taldeak</a>
+                    <div class="submenu">
+                        <a href="#">Partiduak</a>
+                        <a href="#">Estatistikak</a>
+                    </div>
+                </li>
+                <li class="has-submenu"><a href="#">Kluba</a>
+                    <div class="submenu">
+                        <a href="#">Historia</a>
+                        <a href="#">Organigrama</a>
+                        <a href="#">Instalazioak</a>
+                        <a href="#">Kontaktua</a>
+                    </div>
+                </li>
+                <li><a href="contact.php">Babesleak</a></li>
+                <!-- Agregar el ícono de inicio de sesión -->
+                <li class="login-icon"><a href="#"><img src="./img/login-icon-barruan.png" alt="Iniciar sesión"></a></li>
+                <!-- Enlaces adicionales según tus necesidades -->
+            </ul>
+        </nav>
+    </header>
+    <div class="header-orrialde-tituloa">
+        <h1 style="font-family:monospace; position: relative;  z-index: 1;">Iniciar sesión</h1> <!-- Agregar el estilo de fuente aquí -->
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <!-- Formulario de inicio de sesión -->
+        <form class="login-form" action="procesar_login.php" method="post">
+            <h2>ACCESO PARA USUARIOS</h2>
+            <input type="text" name="username" placeholder="Usuario" required>
+            <br>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <br>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 TSKE Tolosa</p>
+    </footer>
+</body>
+</html>

@@ -127,3 +127,55 @@ footer {
     width: 20px; /* Ajusta este valor según el tamaño deseado */
     height: auto;
 }
+
+        /* Estilos para los submenús */
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #0303039d;
+            min-width: 120px;
+            z-index: 1;
+        }
+
+        .submenu a {
+            padding: 10px 15px;
+            display: block;
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        .submenu a:hover {
+            background-color: #ddd;
+        }
+
+        /* Mostrar submenú cuando el hover se encuentra en el elemento o en su descendencia */
+        .has-submenu:hover .submenu,
+        .submenu:hover {
+            display: block;
+        }
+
+        /* Estilos para el icono de login */
+        .login-icon {
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle; /* Alinear verticalmente con el texto del menú */
+        }
+
+        .login-icon img {
+            width: 30px; /* Reducir el tamaño del icono */
+            height: auto;
+        }
+
+        /* Estilos para el menú */
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle; /* Alinear verticalmente con el icono de login */
+        }
+
