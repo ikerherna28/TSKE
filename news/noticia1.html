@@ -1,107 +1,66 @@
+<!-- CONSEGUIR QUE ESTE ALINEADO EL TEXTO Y LA FOTOS DE LAS NOTICAS ESTANDO TODO EN LA MITAD DE LA PANTALLA -->
+<!-- AÑADIR UN SITIO DONDE APARAREZCA LAS DEMAS NOTICAS -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
+    <title>UDARAKO KANPUSA - Tolosako Saskibaloiko Kirol Elkartea</title>
     <link rel="stylesheet" href="/css/noticias.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="main-header">
         <div class="logo">
-            <img src="/img/logo_equipo_sin_fondo.png" alt="Logo">
+            <img src="/img/logo_equipo_sin_fondo.png" alt="Logo del club">
         </div>
         <nav>
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="about.php">Quiénes Somos</a></li>
-                <li><a href="/news.html">Últimas Noticias</a></li>
-                <li><a href="contact.php">Contacto</a></li>
-                <li><a href="stats.php">Estadísticas</a></li>
-                <li><a href="matches.php">Partidos</a></li>
+                <li><a href="/index.html">Hasiera</a></li>
+                <li><a href="news.html">Berriak</a></li>
+                <li class="has-submenu"><a href="#">Taldeak</a>
+                    <div class="submenu">
+                        <a href="#">Partiduak</a>
+                        <a href="#">Estatistikak</a>
+                    </div>
+                </li>
+                <li class="has-submenu"><a href="#">Kluba</a>
+                    <div class="submenu">
+                        <a href="#">Historia</a>
+                        <a href="#">Organigrama</a>
+                        <a href="#">Instalazioak</a>
+                        <a href="#">Kontaktua</a>
+                    </div>
+                </li>
+                <li><a href="contact.php">Babesleak</a></li>
+                <!-- Agregar el ícono de inicio de sesión -->
+                <li class="login-icon"><a href="#"><img src="/img/login-icon.png" alt="Iniciar sesión"></a></li>
+                <!-- Enlaces adicionales según tus necesidades -->
             </ul>
         </nav>
     </header>
 
     <main>
         <article class="news">
-            <h1>El titán Poirier machaca al Girona</h1>
-            <img src="/img/News1.png" alt="Imagen de la noticia">
+            <h1>KAMPUSERAKO IZEN-EMATEA ZABALIK</h1>
+            <img src="/img/UDARAKO KANPUSA.jpeg" alt="Imagen de la noticia">
             <div class="news-content">
-                <h3><i>El pívot hace 19 puntos (seis mates), 
-                    10 rebotes, cuatro tapones y 37 de valoración, su tope en la Liga Endesa, 
-                    para liderar un nuevo triunfo del Real Madrid</i></h3>
+                <h3><i>Uda eta eguraldi onarekin batera, gure udako campusa heldu da.</i></h3>
 
-                <p>Resulta imposible de calcular el valor que atesora el Real Madrid con Vincent Poirier, 
-                    el mejor pívot suplente de Europa. Sería titular prácticamente en todos los equipos del continente, 
-                    pero aquí tiene delante a Walter Tavares, el más determinante a este lado del Atlántico</p>
+                <p>Urte kaotiko honetan gazteenentzako hiri-campus hau antolatzea erabaki dugu. 
+                    Aurten desberdina izango da, ez baikara Debara joango; Tolosan egingo dugu campusa. 
+                    Hala ere, jarduera asko egingo ditugu, horiek guztiek eskatzen zaigun osasun-protokoloa betez. 
+                    Segurtasuna da garrantzitsuena, parte-hartzaile guztien gozamenarekin eta ongizatearekin batera.</p>
 
-                <p>En ausencia del caboverdiano, aún lesionado, como Llull, su recambio se está poniendo las botas.
-                    De paso, sigue dando argumentos para pedir un aumento de sueldo... si finalmente renueva.</p>
-                
-                <p>Poirier fue un titán ante el Bàsquet Girona. Hizo 37 de valoración, su tope en la Liga Endesa, para liderar 
-                    el triunfo del Real Madrid por 92-79. Acabó con 19 puntos, incluidos seis mates, 10 rebotes y cuatro tapones. 
-                    Determinante en ataque y defensa. Una incontenible fuerza de la naturaleza ante la que los catalanes nada pudieron hacer. 
-                    Y lo intentaron. En el segundo partido con Fotis Katsikaris en el banquillo, el equipo tiene mejor pinta, jugó bien, pero no tuvo opciones. 
-                    Las destrozó el pívot rival, para que su equipo, líder de la Liga Endesa, aguantara el ritmo de un Unicaja que presiona por detrás.</p>
-                
-                <p>Fue un gran partido del punto y la i del Madrid. Porque si Poirier puso la contundencia, Campazzo puso la magia. 
-                    El base se gustó desde el primer cuarto, demasiado en algunas ocasiones, buscando la virguería, no siempre eficaz. 
-                    Hizo 17 puntos y ocho asistencias para 27 de valoración. Entre los dos, 64 por los 72 de todo el Girona.</p>
-
-                <img src="/img/Noticia5.jpg" alt="Imagen de la noticia">
-
-                <p>Al ritmo de Facu, el Madrid se fue por 10 en el primer cuarto (26-16). La generosidad presidía su juego. 
-                    Ocho asistencias en el acto inicial y 25 al final. La jugada que puso esa máxima fue el paradigma de ello: 
-                    un triple de Hezonja después de varios pases extra con un gran movimiento de balón. 
-                    Un ataque precioso. Pero el Girona no se dejó impresionar. Cuando controló las pérdidas y se sentaron Campazzo y Poirier, cobró fuerzas.</p>
+                <p>Kanpusa 2007 eta 2012 urteen artean jaiotako gazte guztiei zuzenduta dago, klubeko kide izan ala ez, 
+                guztiak gonbidatuta daude eta pozik hartuko ditugu. Animatu! Primeran pasatuko dugu!</p>
             </div>
         </article>
-
-        <div class="sidebar">
-            <section class="related-news">
-                <div class="related-news-item" id="noticia1">
-                    <img src="/img/Noticia4.jpg" alt="Noticia 1" class="read-more-img">
-                    <h3>Noticia 1</h3>
-                    <p>Contenido breve de la noticia 1...</p>
-                    <a href="#" class="read-more-link" data-target="noticia1">Leer más</a>
-                </div>
-
-                <div class="related-news-item" id="noticia2">
-                    <img src="/img/Noticia1.png" alt="Noticia 2" class="read-more-img">
-                    <h3>Noticia 2</h3>
-                    <p>Contenido breve de la noticia 2...</p>
-                    <a href="/news.html" class="read-more-link" data-target="noticia2">Leer más</a>
-                </div>
-
-                <div class="related-news-item" id="noticia2">
-                    <img src="/img/Noticia2.png" alt="Noticia 2" class="read-more-img">
-                    <h3>Noticia 3</h3>
-                    <p>Contenido breve de la noticia 2...</p>
-                    <a href="#" class="read-more-link" data-target="noticia2">Leer más</a>
-                </div>
-
-                <div class="related-news-item" id="noticia2">
-                    <img src="/img/Noticia3.jpg" alt="Noticia 2" class="read-more-img">
-                    <h3>Noticia 4</h3>
-                    <p>Contenido breve de la noticia 2...</p>
-                    <a href="#" class="read-more-link" data-target="noticia2">Leer más</a>
-                </div>
-
-                <div class="related-news-item" id="noticia2">
-                    <img src="/img/Noticia5.jpg" alt="Noticia 2" class="read-more-img">
-                    <h3>Noticia 5</h3>
-                    <p>Contenido breve de la noticia 2...</p>
-                    <a href="#" class="read-more-link" data-target="noticia2">Leer más</a>
-                </div>
-            </section>
-        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Noticias. Todos los derechos reservados.</p>
+        <p>&copy; 2024 TSKE Tolosa</p>
     </footer>
 </body>
 </html>

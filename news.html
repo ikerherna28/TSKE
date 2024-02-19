@@ -13,40 +13,57 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.php">Quiénes Somos</a></li>
-                <li><a href="news.php">Noticias</a></li>
-                <li><a href="contact.php">Contacto</a></li>
-                <li><a href="stats.php">Estadísticas</a></li>
-                <li><a href="matches.php">Partidos</a></li>
-                <!-- Otros enlaces según tus necesidades -->
+                <li><a href="index.html">Hasiera</a></li>
+                <li><a href="news.html">Berriak</a></li>
+                <li class="has-submenu"><a href="#">Taldeak</a>
+                    <div class="submenu">
+                        <a href="#">Partiduak</a>
+                        <a href="#">Estatistikak</a>
+                    </div>
+                </li>
+                <li class="has-submenu"><a href="#">Kluba</a>
+                    <div class="submenu">
+                        <a href="#">Historia</a>
+                        <a href="#">Organigrama</a>
+                        <a href="#">Instalazioak</a>
+                        <a href="#">Kontaktua</a>
+                    </div>
+                </li>
+                <li><a href="contact.php">Babesleak</a></li>
+                <!-- Agregar el ícono de inicio de sesión -->
+                <li class="login-icon"><a href="login.html"><img src="./img/login-icon.png" alt="Iniciar sesión"></a></li>
+                <!-- Enlaces adicionales según tus necesidades -->
             </ul>
         </nav>
     </header>
-
+    <div class="header-orrialde-tituloa">
+        <h1 style="font-family:monospace; position: relative;  z-index: 1;">Berriak</h1>
+    </div>
     <main>
         <section class="news-container">
             <div class="news-item">
-                <img src="./img/News1.png" alt="Noticia 1">
-                <h2>El titán Poirier machaca al Girona</h2>
-                <p>El pívot hace 19 puntos (seis mates), 10 rebotes, 
-                    cuatro tapones y 37 de valoración, su tope en la Liga Endesa, 
-                    para liderar un nuevo triunfo del Real Madrid</p>
-                <a href="noticia1.html" class="read-more-btn">Leer más</a>
+                <img src="./img/UDARAKO KANPUSA.jpeg" alt="El titán Poirier machaca al Girona">
+                <h2>Udarako kampusa hemen dugu!</h2>
+                <p>Aurten Tolosan izango da gure udako kampusa. 
+                    Gure gazteekin pasatzeko aukera paregabea izango da. 
+                    Data desberdinak daude gazte guztiak parte hartzeko.</p>
+                <a href="./news/noticia1.html" class="read-more-btn">Gehiago irakurri</a>
             </div>
 
             <div class="news-item">
-                <img src="./img/Noticia4.jpg" alt="Noticia 2">
-                <h2>Título de la Noticia 2</h2>
-                <p>Texto resumen de la noticia. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <a href="noticia2.html" class="read-more-btn">Leer más</a>
+                <img src="./img/TSKE FINALERA.jpg" alt="Título de la Noticia 2">
+                <h2>Gure neskak finalera dijoazte</h2>
+                <p>Arri BKL Pagoeta eta Arri TSKE Gaztelu taldeak Gipuzkoako Nesken Liga finalera iritsi dira. 
+                    Azken urteetan liga hau dominatu dituzten bi talde hauek, aurten ere berdina izango da.
+                    Zein izango da irabazlea aurten?</p>
+                <a href="./news/noticia2.html" class="read-more-btn">Gehiago irakurri</a>
             </div>
 
             <div class="news-item">
-                <img src="./img/Noticia3.jpg" alt="Noticia 3">
-                <h2>Título de la Noticia 3</h2>
-                <p>Texto resumen de la noticia. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <a href="noticia3.html" class="read-more-btn">Leer más</a>
+                <img src="./img/IGOERA FASEA.jpg" alt="Título de la Noticia 3">
+                <h2>EUSKAL LIGARA IGOERA </h2>
+                <p>Larunbatean semifinalak jokatuko dira, eta hauen emaitzen arabera definituko dira igandeko finalen ordutegiak.</p>
+                <a href="./news/noticia3.html" class="read-more-btn">Gehiago irakurri</a>
             </div>
 
             <!-- Agregar más noticias según sea necesario -->
